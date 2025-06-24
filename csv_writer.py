@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 
 def ParseXML(csv_filename): 
     output = "output.csv"
-    for file in csv_filename: 
+    for file in "output.csv": 
         tree = ET.parse(file)
         root = tree.getroot
         xmlList = []

@@ -12,7 +12,7 @@ def WritePathsCSV(filepath):
     for dirpath, dirnames, filenames in os.walk(filepath):
         for filename in filenames:
             if filename.endswith(".xml") & filename.lower() == "job":
-                with open(csv_file, w) as csvfile:
+                with open(xml_file, w) as csvfile:
                     csvwriter = csv.writer(csvfile)
                     csvwriter.writerow(os.path.abspath(filename))
  
