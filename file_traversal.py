@@ -1,14 +1,22 @@
 import os
+import csv
 
-def getXML(filepath):   
-    if os.path.exists(filepath):
-        for dirpath, dirnames, filenames in os.walk(filepath):
-            for filename in filenames:
-                if filename.lower().endswith(".xml"):
-                    print(filename)
+def findXMLPaths(filepath):  
+    if ValidateFilePath(filepath) == True:
+        WritePathsCSV(filepath)
     else:
         print(f"Path does not exist: {filepath}")
 
+def WritePathsCSV(filepath): 
+    csv_file = "locations.csv"
+    for dirpath, dirnames, filenames in os.walk(filepath):
+        for filename in filenames:
+            if filename.endswith(".xml") & filename.lower() == "job":
+                with open(csv_file, w) as csvfile:
+                    csvwriter = csv.writer(csvfile)
+                    csvwriter.writerow(os.path.abspath(filename))
+ 
+                
 def ValidateFilePath(filepath):
     if os.path.exists(filepath):
         return True
