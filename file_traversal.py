@@ -8,7 +8,7 @@ def findXMLPaths(filepath):
         print(f"Path does not exist: {filepath}")
 
 def WritePathsCSV(filepath): 
-    csv_file = "locations.csv"
+    xml_file = "locations.csv"
     for dirpath, dirnames, filenames in os.walk(filepath):
         for filename in filenames:
             if filename.endswith(".xml") & filename.lower() == "job":
