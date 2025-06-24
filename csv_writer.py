@@ -1,30 +1,42 @@
 import csv
-import os 
+import os
 import xml.etree.ElementTree as ET
 
-def ParseXML(csv_filename): 
-    output = "output.csv"
-    with open('locations.csv', 'r') as csvfile:
-        reader = csv.reader(csvfile)
-        for row in reader:
-            tree = ET.parse(row[0])
-            print("parsing" + row)
-            root = tree.getroot()
-            xmlList = []
-            print("writing path")
-            xmlList.append(os.path.abspath(row[0]))
-            xmlList.append(root.find('scheduleName'))
-            xmlList.append(root.find('scheduleTime'))    
-            xmlList.append(root.find('scheduleType'))    
-            xmlList.append(root.find('enabled'))                
-            with open(output, 'w', newline='') as csvfile: 
-                print("writing to file")
-                csvwriter = csv.writer(csvfile)
-                for dirpath, dirnames, filenames in os.walk(row[0]):
-                    for filename in filenames:
-                        if filename.endswith(".xml") and "job" in filenames.lower():
-                            full_path = os.path.join(dirpath, filename)
-                            xmlList.append(full_path)
-                            csvwriter.writerow(xmlList)
-                                
-                
+def ParseXML(csv_filename):
+    output_file_name = "output.csv"
+
+    with open(output_file_name, 'w', newline='', encoding='utf-8') as output_file_handle:
+        writer = csv.writer(output_file_handle)
+
+        writer.writerow(["File Path", "Schedule Name", "Schedule Time",
+                         "Schedule Type", "Enabled"])
+
+        with open('locations.csv', 'r', newline='', encoding='utf-8') as input_locations_file:
+            reader = csv.reader(input_locations_file)
+            for row in reader:
+                xml_file_path = row[0]
+                print(f"Parsing XML file: {xml_file_path}")
+
+                tree = ET.parse(xml_file_path)
+                root = tree.getroot()
+
+                xmlList = []
+                xmlList.append(os.path.abspath(xml_file_path))
+                xmlList.append(root.tag)
+
+                schedule_name_elem = root.find('scheduleName')
+                xmlList.append(schedule_name_elem.text if schedule_name_elem is not None else "N/A")
+
+                schedule_time_elem = root.find('scheduleTime')
+                xmlList.append(schedule_time_elem.text if schedule_time_elem is not None else "N/A")
+
+                schedule_type_elem = root.find('scheduleType')
+                xmlList.append(schedule_type_elem.text if schedule_type_elem is not None else "N/A")
+
+                enabled_elem = root.find('enabled')
+                xmlList.append(enabled_elem.text if enabled_elem is not None else "N/A")
+
+                print("Writing data to output.csv")
+                writer.writerow(xmlList)
+
+    print(f"\nAll processed XML data written to {output_file_name}")

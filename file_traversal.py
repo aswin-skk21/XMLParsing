@@ -11,16 +11,16 @@ def findXMLPaths(filepath):
 def WritePathsCSV(filepath): 
     xml_file = "locations.csv"
     print("starting os walk")
-    with open(xml_file, 'w') as csvfile:
+    with open(xml_file, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for dirpath, dirnames, filenames in os.walk(filepath):
             for filename in filenames:
                 if filename.endswith(".xml") and "job" in filename.lower():
                     #attributes = []
-                    print("found" + filename)
+                    print("found " + filename)
                     path = os.path.join(dirpath, filename)
                     #attributes.append(path)
-                    csvwriter.writerow(path)
+                    csvwriter.writerow([path])
  
                 
 def ValidateFilePath(filepath):
