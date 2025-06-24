@@ -13,16 +13,18 @@ def ParseXML(csv_filename):
             xmlList = []
             print("writing path")
             xmlList.append(os.path.abspath(row[0]))
-            #find all method, selected attributes, 
-            #append to list
-            with open(output, 'w') as csvfile: 
+            xmlList.append(root.find('scheduleName'))
+            xmlList.append(root.find('scheduleTime'))    
+            xmlList.append(root.find('scheduleType'))    
+            xmlList.append(root.find('enabled'))                
+            with open(output, 'w', newline='') as csvfile: 
                 print("writing to file")
                 csvwriter = csv.writer(csvfile)
                 for dirpath, dirnames, filenames in os.walk(row[0]):
                     for filename in filenames:
                         if filename.endswith(".xml") and "job" in filenames.lower():
                             full_path = os.path.join(dirpath, filename)
-                            if os.path.isfile(full_path):  # Only write if it's a file
-                                csvwriter.writerow([full_path])
+                            xmlList.append(full_path)
+                            csvwriter.writerow(xmlList)
                                 
                 
