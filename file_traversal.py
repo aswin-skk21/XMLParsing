@@ -12,14 +12,11 @@ def WritePathsCSV(filepath):
     with open(xml_file, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for dirpath, dirnames, filenames in os.walk(filepath):
-            #print(dirpath)
             for filename in filenames:
                 print(filename)
                 if filename.endswith(".XML") and filename.lower() == "job.xml":
-                    #attributes = []
                     print("found " + filename)
                     path = os.path.join(dirpath, filename)
-                    #attributes.append(path)
                     csvwriter.writerow([path])
  
                 

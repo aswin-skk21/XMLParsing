@@ -3,10 +3,10 @@ import os
 import xml.etree.ElementTree as ET
 
 def ParseXML(csv_filename):
-    output_file_name = "output.csv"
+    output_file_name = "raw_output.csv"
 
-    with open(output_file_name, 'w', newline='', encoding='utf-8') as output_file_handle:
-        writer = csv.writer(output_file_handle)
+    with open(output_file_name, 'w', newline='') as ofs:
+        writer = csv.writer(ofs)
 
         writer.writerow(["JobID", "Schedule Name", "Schedule Time",
                          "Schedule Type", "Enabled"])
@@ -39,5 +39,3 @@ def ParseXML(csv_filename):
 
                 print("Writing data to output.csv")
                 writer.writerow(xmlList)
-
-    print(f"\nAll processed XML data written to {output_file_name}")

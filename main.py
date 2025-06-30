@@ -9,9 +9,13 @@ def main():
         print("Wrong amount of arguments")  
         sys.exit()  
     file_traversal.findXMLPaths(sys.argv[1])
+    print("XML file paths written to locations.csv")
     csv_writer.ParseXML("locations.csv")
+    print("XML data written to raw_output.csv")
     csv_delimiter.splitName("raw_output.csv")
+    print("Data split and written to split_output.csv")
     unique_times.final_clean()
+    print("Final data cleaned and written to final_output.csv")
     
     
 
