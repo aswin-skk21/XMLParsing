@@ -8,10 +8,10 @@ def ParseXML(csv_filename):
     with open(output_file_name, 'w', newline='', encoding='utf-8') as output_file_handle:
         writer = csv.writer(output_file_handle)
 
-        writer.writerow(["File Path", "Schedule Name", "Schedule Time",
+        writer.writerow(["JobID", "Schedule Name", "Schedule Time",
                          "Schedule Type", "Enabled"])
 
-        with open('locations.csv', 'r', newline='', encoding='utf-8') as input_locations_file:
+        with open('locations.csv', 'r', newline='') as input_locations_file:
             reader = csv.reader(input_locations_file)
             for row in reader:
                 xml_file_path = row[0]
@@ -21,9 +21,10 @@ def ParseXML(csv_filename):
                 root = tree.getroot()
 
                 xmlList = []
-                xmlList.append(os.path.abspath(xml_file_path))
-                xmlList.append(root.tag)
 
+                schedule_name_elem = root.find('id')
+                xmlList.append(schedule_name_elem.text if schedule_name_elem is not None else "N/A")
+                
                 schedule_name_elem = root.find('scheduleName')
                 xmlList.append(schedule_name_elem.text if schedule_name_elem is not None else "N/A")
 

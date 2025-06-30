@@ -5,8 +5,6 @@ def findXMLPaths(filepath):
     if ValidateFilePath(filepath) == True:
         print("validated")
         WritePathsCSV(filepath)
-    else:
-        print(f"Path does not exist: {filepath}")
 
 def WritePathsCSV(filepath): 
     xml_file = "locations.csv"
@@ -14,8 +12,10 @@ def WritePathsCSV(filepath):
     with open(xml_file, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for dirpath, dirnames, filenames in os.walk(filepath):
+            #print(dirpath)
             for filename in filenames:
-                if filename.endswith(".xml") and "job" in filename.lower():
+                print(filename)
+                if filename.endswith(".XML") and filename.lower() == "job.xml":
                     #attributes = []
                     print("found " + filename)
                     path = os.path.join(dirpath, filename)
@@ -25,6 +25,7 @@ def WritePathsCSV(filepath):
                 
 def ValidateFilePath(filepath):
     if os.path.exists(filepath):
+        print("Check")
         return True
     else:
         print("File path does not exist")
