@@ -1,0 +1,127 @@
+JobID,Schedule Name,Schedule Steps,Schedule Time,Schedule Type,Enabled,Machine
+her3dUhk,5Labs,00 - 5Labs Test (Not this One),8:00 AM,manually,False,CrushFTP
+mF9Z6fZ3,5Labs,00a - 5Labs Test IPSD Files,8:00 AM,manually,False,CrushFTP
+EzYUckzE,5Labs,01 - 5Labs IPSD Files (Disabled 2023-11-13),09:00 PM,daily,False,CrushFTP
+v7eBPqvb,5Labs,Copy Of 01 - 5Labs IPSD Files,09:00 PM,daily,False,CrushFTP
+xmpQdmYx,ActivateLearning IQWST,01 Upload IQWST File,11:01 PM,daily,False,CrushFTP
+y2nTP2Nt,ActivateLearning IQWST,02 Transfer IQWST File,11:35 PM,daily,False,CrushFTP
+72PP9f9u,ActivateLearning IQWST,03 Transfer IQWST File (ShareSpace),11:35 PM,daily,False,CrushFTP
+qKZcNfdK,ActivateLearning IQWST - Retired,XX - Dummy Job to Fail,8:00 AM,manually,True,CrushFTP
+PAKBphB6,Aimsweb,01 Upload Aimsweb File,05:45 PM,daily,False,CrushFTP
+mvEDfWEU,Aimsweb,02 Email Aimsweb File,05:50 PM,daily,False,CrushFTP
+dUaRK7mW,Aimsweb,03 Upload Aimsweb Txt File,05:47 PM,daily,False,CrushFTP
+c46HQgd6,Aimsweb,04 SFTP Aimsweb File,05:47 PM,daily,False,CrushFTP
+99TQKqKc,APEX,01 APEX - Send Users File (8-15 PM),08:25 PM,daily,False,CrushFTP
+VZqNDBMh,Beable,01 Transfer Beable Zip (Off - PowerShell'd),8:00 AM,manually,False,CrushFTP
+7pTAN6yA,Blackboard ParentLink,00a Upload Blackboard Transfer Files (Manual),8:00 AM,manually,False,CrushFTP
+BnUDanyn,Blackboard ParentLink,01 Upload Blackboard Transfer Files (Nightly),"12:10 AM,11:10 PM",daily,True,CrushFTP
+pf62Q9YY,Blackboard ParentLink,02 Transfer Blackboard Files (12_15 AM),"12:15 AM,11:15 PM",daily,True,CrushFTP
+yeP9eyPR,Clever,01 Clever - Upload and Send Files,"02:20 AM,10:35 PM",daily,False,CrushFTP
+UbgVn9C7,Concept - DO NOT USE,,8:00 AM,manually,False,CrushFTP
+XNwTX7qd,ConnectED,Connect5 - Send Files,11:15 PM,daily,False,CrushFTP
+9ngunbqk,ConnectED,ConnectED - Transport to Blackboard (Staff),11:30 PM,daily,True,CrushFTP
+9vKMzU77,ConnectED,ConnectED - Transport to Blackboard (Students),11:00 PM,daily,True,CrushFTP
+7cgmuw2z,DESSA,DESSA Export,11:30 PM,daily,False,CrushFTP
+EcBEMrUn,Destiny,Destiny - From SFTP To Destiny Web Server,11:30 PM,daily,False,CrushFTP
+yPPWcVb8,Destiny,Destiny Fees Extract (ird204),"11:50 AM,07:05 PM",daily,True,CrushFTP
+ycWyRYew,Destiny,Fines to Close in Destiny Cloud,"01:05 PM,08:20 PM",weekly,True,CrushFTP
+pm6bbeHM,Destiny,To The Cloud,11:30 PM,daily,True,CrushFTP
+YtYeyu98,Dreambox,01 Upload Dreambox Files (Disabled - Summer),10:10 PM,daily,False,CrushFTP
+89UD2XBz,Dreambox,02 Transfer Dreambox Files (Disabled - Summer),10:20 PM,daily,False,CrushFTP
+4Hx8cZBh,EasyBridge,01 Upload EasyBridge Files (RI Cred),08:01 PM,daily,True,CrushFTP
+baRVtzTg,EasyBridge,02 Transfer EasyBridge File,08:30 PM,daily,True,CrushFTP
+4rVmwrem,EasyBridge,XX Zip EasyBridge Files (DOES NOT WORK),8:00 AM,manually,False,CrushFTP
+VGVYNxcD,Edficiency,01 - Edficiency Upload (7 Forty Five PM),07:45 PM,daily,False,CrushFTP
+7PNx8cpR,Edficiency,01a - Edficiency Upload (7 Forty Five PM) WV MV Only,07:45 PM,daily,False,CrushFTP
+AfBzDXkp,Edficiency,02 - Edficiency Transfer (7 Fifty PM),07:50 PM,daily,False,CrushFTP
+FNVhNr3q,Edficiency,02a - Edficiency Transfer (7 Fifty PM) WV MV Only,07:50 PM,daily,False,CrushFTP
+KnWUcTMT,Edficiency,03- Edficiency Error Files,8:00 AM,manually,False,CrushFTP
+XMuVyUuQ,Edficiency,0A - Securly OneRoster Transfer (Seven Fifth PM),07:50 PM,daily,False,CrushFTP
+FAZWfYC8,Embrace,01 - Move Old PDFs,8:00 AM,manually,True,CrushFTP
+4bNrY3y4,Embrace,02 - Purge Old PDFs,8:00 AM,manually,True,CrushFTP
+a78PVzK7,Embrace,08 Embrace - From EduPoint To Embrace (5 minutes before the hour),"12:55 AM,01:55 AM,02:55 AM,03:55 AM,04:55 AM,05:55 AM,06:55 AM,07:55 AM,08:55 AM,09:55 AM,10:55 AM,11:55 AM,12:55 PM,01:55 PM,02:55 PM,03:55 PM,04:55 PM,05:55 PM,06:55 PM,07:55 PM,08:55 PM,09:55 PM,10:55 PM,11:55 PM",daily,True,CrushFTP
+BBHgCTXF,Embrace,09 Embrace - From Embrace to Edupoint (PDF) (IP) (15 on the hour),"12:15 AM,01:15 AM,02:15 AM,03:15 AM,04:15 AM,05:15 AM,06:15 AM,07:15 AM,08:15 AM,09:15 AM,10:15 AM,11:15 AM,12:15 PM,01:15 PM,02:15 PM,03:15 PM,04:15 PM,05:15 PM,06:15 PM,07:15 PM,08:15 PM,09:15 PM,10:15 PM,11:15 PM",daily,True,CrushFTP
+mqafF9Zk,Embrace,10 Embrace - Student Demographics to Embrace (1 minute past the hour),"06:01 AM,06:02 AM,07:01 AM,07:02 AM,08:01 AM,08:02 AM,09:01 AM,09:02 AM,10:01 AM,10:02 AM,11:01 AM,11:02 AM,12:01 PM,12:02 PM,01:01 PM,01:02 PM,02:01 PM,02:02 PM,03:01 PM,03:02 PM,04:01 PM,04:02 PM,05:01 PM,05:02 PM,06:01 PM,06:02 PM,07:01 PM,07:02 PM",daily,True,CrushFTP
+VCWkDPQF,Embrace,11 Embrace - IPSD_Student_Additional_504 to Embrace (2 minutes after the hour),"06:02 AM,07:02 AM,08:02 AM,09:02 AM,10:02 AM,11:02 AM,12:02 PM,01:02 PM,02:02 PM,03:02 PM,04:02 PM,05:02 PM,06:02 PM,07:02 PM",daily,True,CrushFTP
+CqzbcDUB,Embrace,14 Embrace - Rename the old poweriep-students file,03:59 AM,daily,True,CrushFTP
+bzVpgTfh,Embrace,15 Embrace - Move poweriep-students file,04:00 AM,daily,True,CrushFTP
+tGXkN3ef,Embrace,16 Embrace - from sftp to sqlprod1,"06:10 AM,07:10 AM,08:10 AM,09:10 AM,10:10 AM,11:10 AM,12:10 PM,01:10 PM,02:10 PM,03:10 PM,04:10 PM,05:10 PM,06:10 PM",daily,True,CrushFTP
+4CarzkUw,Embrace,Embrace - Email if Files Found (PDF),8:00 AM,minutely,False,CrushFTP
+mQF4gDq4,Embrace,Embrace - From Edupoint to Embrace (To Edupoint Folder) (Manual),8:00 AM,manually,False,CrushFTP
+w6kpwHVv,Embrace,Embrace - From Embrace to Edupoint (PDF) -BROKEN (OFF),06:00 AM,minutely,False,CrushFTP
+PdpGG4mn,Embrace,Embrace - To IPSD to EduPoint (File),04:00 AM,manually,False,CrushFTP
+eGBVfXqw,Embrace - To IPSD to EduPoint (File) (DELETE),,04:00 AM,daily,False,CrushFTP
+D7YXdpUA,FreeReduced,01 Upload FRM Files (RI Cred),09:50 PM,daily,False,CrushFTP
+uWvf9Ubn,FreeReduced,02 Send Log Files,10:30 PM,daily,False,CrushFTP
+9dugwufc,Frontline - Professional Growth,01 Send PG User Import File,10:05 PM,daily,True,CrushFTP
+T9cNEDpy,GG4L,GG4L,03:30 AM,daily,True,CrushFTP
+aqfMkDV3,Google Drive,00 GDrive - Student Photos to CrushFTP (Quarterly),06:00 AM,monthly,False,CrushFTP
+4dNHdNcH,Google Drive,01 GDrive - Student Photos to CrushFTP,10:00 PM,daily,False,CrushFTP
+4HMpFXqd,Google Drive,02 GDrive - Student Photos to PushCoin,11:00 PM,minutely,True,CrushFTP
+BXr4EZ4M,Google Drive,0A GDrive - Student Photos to PushCoin,10:00 PM,manually,True,CrushFTP
+NHmGbEMm,Google Drive,0X GDrive - Student Photos to PushCoin (Not Using),10:00 PM,daily,False,CrushFTP
+wta2AaPX,Google Drive,16 Brookdale GDrive Photos,8:00 AM,manually,True,CrushFTP
+fT7rxEHw,Google Drive,99 - Test,8:00 AM,manually,False,CrushFTP
+27M2Gn27,Google Drive,99 GDrive - Student Photos to CrushFTP (Manual),10:00 PM,manually,True,CrushFTP
+CK2nn9ZR,Google Drive,Copy Of 00 GDrive - Student Photos to CrushFTP (Manual),06:00 AM,manually,True,CrushFTP
+wkknFzMR,Google Drive,Copy Of 01 GDrive - Student Photos to CrushFTP (Manual By School),10:00 PM,daily,False,CrushFTP
+vpQxy3d2,Google Drive,i16 GDrive - Student Photos to PushCoin (Brookdale),01:00 AM,monthly,True,CrushFTP
+W8zrtVZf,Google Drive,i28 GDrive - Student Photos to PushCoin (Brooks),01:00 AM,monthly,True,CrushFTP
+FRdu2hQz,HMH,01 Upload HMH Zip File,09:10 PM,daily,False,CrushFTP
+KzqZrHHk,HMH,02 Transfer HMH File,09:15 PM,daily,False,CrushFTP
+ePKTTB4d,IXL Math,01 Upload IXL Files,10:30 PM,daily,False,CrushFTP
+WQFmWFEM,IXL Math,02 Transfer IXL Files,10:37 PM,daily,False,CrushFTP
+gazWbGXE,KickUp,01 KickUp Send,06:55 PM,daily,True,CrushFTP
+KVzVbyqN,LaunchPad,Create ZIP file to send to BFW,05:30 PM,daily,True,CrushFTP
+Pc2MWCdF,LaunchPad,find,8:00 AM,manually,True,CrushFTP
+d37HbhwZ,LaunchPad,Upload Files,8:00 AM,manually,True,CrushFTP
+h9egpcHd,Lexia,01 Upload Lexia Files (Disabled - Summer),07:35 PM,daily,False,CrushFTP
+fMeV8Brw,Lexia,02 Transfer Lexia Files (Disabled - Summer),07:40 PM,daily,False,CrushFTP
+4ecBW689,Lexia,03 Lexia Error Logs (Disabled - Summer),03:00 AM,daily,False,CrushFTP
+CQyxqvcW,LinkIt,00 Initial Update (Manual Only),8:00 AM,manually,True,CrushFTP
+VD24VbvZ,LinkIt,01 Transfer LinkIt Staff Student Files (2 30 AM),02:30 AM,daily,True,CrushFTP
+CBMdcgab,LinkIt,02 Transfer LinkIt Attendance File (2 30 AM),02:30 AM,daily,True,CrushFTP
+8TwZEQ4R,LinkIt,03 Transfer LinkIt Grades File (2 30 AM),02:30 AM,daily,True,CrushFTP
+KBcqPPh6,MasteryManager,01 Upload MasteryManager Files,08:00 PM,daily,False,CrushFTP
+Xanc6Cyt,MasteryManager,02 Transfer MasteryManager Files,03:03 AM,daily,False,CrushFTP
+Yk7TpV7y,McGrawHill,01 Upload McGrawHill File,01:15 AM,daily,False,CrushFTP
+kxMHPYtC,McGrawHill,02 Transfer McGrawHill File,01:30 AM,daily,False,CrushFTP
+3gtATd3U,NatGeo,01 Upload NatGeo Files,11:20 PM,daily,False,CrushFTP
+Uw8VMdmg,NatGeo,02 Transfer NatGeo Files,11:25 PM,daily,False,CrushFTP
+GMVzVZ92,NatGeo,03 Email Alt NatGeo File,11:30 PM,daily,False,CrushFTP
+8n64yAMh,OneDrive_TEST,,8:00 AM,manually,True,CrushFTP
+R3WCffCc,OneRoster,OneRoster to SQLProd1 1005 PM (RI Cred),10:05 PM,daily,True,CrushFTP
+8yTBBe6c,Pioneer Valley,01 Upload Pioneer Valley Files (Disabled - Summer),05:55 PM,daily,False,CrushFTP
+62kd3FYY,ProxMox,ProxMoxTest,8:00 AM,manually,True,CrushFTP
+4KCW7zKC,PushCoin,PushCoins Midware to PushCoin (SQLProd) (RI Cred),"12:50 PM,07:55 PM",daily,True,CrushFTP
+ptQvkkU8,PushCoin,PushCoins to PushCoin (Old),"12:50 PM,07:55 PM",daily,False,CrushFTP
+Une6yEWU,PushCoin,PushCoins to PushCoin (SQLProd) [Off For Rollover],"12:50 PM,07:55 PM",daily,False,CrushFTP
+ZQTAwwyX,PushCoin,Send Courses File to SQLDEV1 (RI Cred) - Disabled,"12:11 PM,07:41 PM",daily,False,CrushFTP
+uB78p9bU,PushCoin,Send User File to SQLDEV1 (RI Cred) - Disabled,"12:11 PM,07:41 PM",daily,False,CrushFTP
+zuuCmYn4,Reflex,01 Upload Reflex Files,08:50 PM,daily,False,CrushFTP
+Y4r4zhcn,Reflex,01b Upload OneDrive Reflex Files,"08:51 PM,10:51 PM",daily,False,CrushFTP
+V3dcNx2q,Reflex,02 Transfer Reflex Files,"08:55 PM,10:55 PM",daily,False,CrushFTP
+BwFVFbwT,Rubicon Atlas,01 Email Rubicon Atlas File (RI Cred),07:30 AM,weekly,True,CrushFTP
+2Xjw4VBg,Sample,,8:00 AM,manually,False,CrushFTP
+nNfXNVbE,Sample of Documentation,,8:00 AM,manually,True,CrushFTP
+eGMAhmB6,SchooLinks,01 Upload SchooLinks Files (RI Cred),08:20 PM,daily,True,CrushFTP
+EgQeQGb9,SchooLinks,02 Transfer SchooLinks File,08:25 PM,daily,True,CrushFTP
+UB3Tk3px,Skyward,Send Lawson Backup to Skyward,8:00 AM,manually,True,CrushFTP
+zQT3YuPc,SNAP,Cloud SNAP Condition Imports (ird204),"12:15 AM,01:15 AM,02:15 AM,03:15 AM",weekly,True,CrushFTP
+FxRyYUr8,SNAP,Cloud SNAP Demographics,"04:55 AM,04:20 PM",weekly,True,CrushFTP
+HXu66fGh,SNAP,Import Notifications (Disabled 2024-07-23),05:30 AM,weekly,False,CrushFTP
+GA3vqwcF,SNAP,SNAPLive2 Files (No Longer Using),04:45 AM,daily,False,CrushFTP
+cg9zUPgA,SNAP,Upload Health Conditions,8:00 AM,manually,True,CrushFTP
+ARXk7HH3,Test - for documentation,,8:00 AM,manually,True,CrushFTP
+T9tbdvPw,Test 2022-03-18,,8:00 AM,manually,True,CrushFTP
+pZH3RgGM,Test for Documentation,,8:00 AM,manually,True,CrushFTP
+FddVGqWT,Test_BS,,8:00 AM,manually,False,CrushFTP
+NgGgqHNt,Test_Email,,8:00 AM,manually,False,CrushFTP
+TW4hKbFc,True North Logic,01 Upload True North Logic Files (From DW3) (RI Cred) - Off 8-7-24,08:25 PM,daily,False,CrushFTP
+QruyKPDy,True North Logic,02 Transfer to TNL (Disabled),08:31 PM,daily,False,CrushFTP
+Um86PCpB,True North Logic,03 New Transfer to TNL - Off 8-7-24,08:31 PM,daily,False,CrushFTP
+cnTgWdWH,VersaTrans,VersaTrans Files to V_ Drive (No Longer Using),09:00 PM,daily,False,CrushFTP
+TEHP32me,VersaTrans,VersaTrans Import Friday File (RI Cred),05:05 PM,weekly,True,CrushFTP
+TZxVEaUe,VersaTrans,VersaTrans(US) to V Drive (RI Cred),02:30 AM,daily,True,CrushFTP
+rzYYYAyW,YellowFolder,YellowFolder - Pass on Export File to YellowFolder (RI Cred),11:15 PM,daily,False,CrushFTP
+7mTkPMb6,YellowFolder,YellowFolder - Pass on Skyward Export File to YellowFolder (RI Cred),11:15 PM,daily,True,CrushFTP
